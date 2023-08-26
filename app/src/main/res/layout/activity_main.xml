@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:hint="Enter Value"
+        android:textSize="25dp"
+        android:textColor="@color/white" />
+
+
+    <LinearLayout
+        android:id="@+id/c2fsection"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/editTv"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/optionC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Celcius"
+            android:paddingRight="10dp"
+            android:textSize="18dp"/>
+
+        <Switch
+            android:id="@+id/switchforC2F"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:id="@+id/optionF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Forenhite"
+            android:paddingLeft="10dp"
+            android:textSize="18dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/oprBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/c2fsection"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Convert"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/resultTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/oprBtn"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/clearbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Clear"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:onClick="clearValue"
+        android:textSize="20dp" />
+
+
+
+</RelativeLayout>
