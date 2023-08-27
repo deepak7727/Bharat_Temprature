@@ -36,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
                 if(optionBtn.isChecked()) {
                     // if input value in Celcius
                     int ResultValue = (int) ((inputValue * 1.8) + 32);
-                    outputTv.setText(ResultValue);
+                    outputTv.setText(String.valueOf(ResultValue));
                 }
                 else {
                     //if value is Forenhite
                     int ResultValue = (int) ( (inputValue - 32) * 0.5555);
-                    outputTv.setText(ResultValue);
+                    outputTv.setText(String.valueOf(ResultValue));
                 }
             }
         });
